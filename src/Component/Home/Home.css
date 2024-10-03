@@ -1,0 +1,603 @@
+.HomeComponent {
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.MainHomePage {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#box1 {
+    grid-row: 1/3;
+}
+
+.MainHomePage {
+    background-color: #e5e5e5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* start UpdateImage Component Css */
+
+.UpdateImage {
+    background-color: rgb(255, 252, 252);
+    padding: 10px;
+
+    & .Image {
+        display: flex;
+        justify-content: center;
+    }
+
+    & hr {
+        color: rgb(153, 153, 153);
+        margin-top: -20px;
+    }
+
+
+    & .button {
+        display: flex;
+        justify-content: center;
+
+        & button {
+            margin-left: 10px;
+            font-size: 20px;
+            padding: 5px 15px;
+            border: none;
+            background-color: rgb(189, 185, 185);
+            color: white;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        & button:hover {
+            background-color: rgb(156, 154, 154);
+            transition: .5s;
+        }
+    }
+}
+
+/* End UpdateImage Component Css */
+
+/* ///////////////////////////////////////// */
+
+/* start SecondImage Component Css */
+
+.SecondImage,
+.SelectMainImg {
+    padding: 10px;
+
+    & .Image {
+        width: 100%;
+        height: 1300px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+
+    & .fitnessSectionImg {
+        padding-top: 10px;
+        background-color: #e8e8e8;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+        & .InnerImage {
+            width: 100%;
+            height: 300px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+
+            }
+        }
+
+        & .typeImg {
+            display: flex;
+        }
+
+    }
+}
+
+.downloadDetails {
+    display: flex;
+    width: 100%;
+    padding: 20px 20px 60px 20px;
+    font-size: 19px;
+
+    & .fitnessDecription {
+        width: 80%;
+        padding: 0px 60px;
+    }
+}
+
+/* End SecondImage Component Css */
+
+/* /////////////////////////////////////// */
+
+/* start ThirdImage Component Css */
+
+.trackingDetails {
+    padding: 20px 30px;
+
+    & .proTracking {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+
+        & .ftLine,
+        .ltLine {
+            height: 2.5px;
+            background-color: rgb(205, 205, 205);
+            width: 33%;
+        }
+
+        & .midLine {
+            color: #ccc;
+            font-size: 26px;
+            padding: 0 15px;
+            font-weight: bold;
+        }
+    }
+
+    & .ProTracking {
+        cursor: pointer;
+    }
+
+    & .downLoadpdf {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        margin-top: -20px;
+    }
+
+    & .proSelector {
+        display: flex;
+        justify-content: center;
+        padding: 10px 80px;
+        flex-wrap: wrap;
+
+
+        & .box {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #ccc;
+            margin: 3px;
+            font-size: 30px;
+            color: #ccc;
+            font-weight: 600;
+        }
+    }
+}
+
+/* End ThirdImage Component Css */
+
+/* //////////////////////////////////////////// */
+
+/* InnerFourth Component Image css Start   */
+
+.InnerFourthComponent {
+    padding: 30px 120px;
+    text-align: center;
+
+    & h1 {
+        font-family: 'Oswald', sans-serif;
+        margin: 20px 0px;
+    }
+
+    & p {
+        font-size: 19px;
+        text-align: justify;
+    }
+
+    & .downloadBookImage {
+        margin: 40px -30px 0 0;
+
+        & .DwLink {
+            color: red;
+            font-size: 19px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: -7px;
+
+            & a {
+                color: rgb(228, 3, 3);
+                font-weight: 600;
+                margin-right: 30px;
+            }
+        }
+    }
+
+}
+
+
+/* Start fifth Image component css details */
+
+.FifthImgDetails {
+    display: flex;
+    margin: 20px 0;
+
+    & p {
+        font-size: 19px;
+        padding: 10px 20px;
+    }
+
+    & img {
+        margin: 15px;
+    }
+}
+
+.handleEvent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    & .Sets,
+    .timing {
+        text-align: center;
+    }
+
+
+}
+
+.programIndexDetails {
+    margin-top: -25px;
+    text-align: center;
+    padding: 10px 80px;
+
+    & .IndexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    & .box {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        border: 2px solid #c2c2c2;
+        margin: 5px 8px;
+        cursor: pointer;
+
+        & .innnerBox {
+            width: 90%;
+            padding-top: 10px;
+            color: white;
+            font-weight: 600;
+            background-color: #c2c2c2;
+        }
+
+        & .true {
+            width: 36%;
+            background-color: #FFF;
+
+
+            & i {
+                font-size: 37px;
+                padding: 5px;
+                margin: 0;
+                background-color: #c2c2c2;
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+/* End fifth Image component css details */
+
+/* End Home All Css  */
+
+/* //////////////////////////////////////////////////////// */
+
+@media only screen and (max-width:950px) {
+
+    .fitnessSectionImg {
+
+        & .typeImg {
+            margin: 3px auto;
+        }
+
+        & .InnerImage {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .InnerFourthComponent {
+        padding: 20px;
+        text-align: center;
+
+        & h1 {
+            font-family: 'Oswald', sans-serif;
+            margin: 10px 0px;
+        }
+
+        & p {
+            font-size: 19px;
+            text-align: justify;
+        }
+
+        & .downloadBookImage {
+            margin: 10px -5px 0 0;
+
+            & a {
+                color: rgb(228, 3, 3);
+                font-weight: 600;
+                margin-right: 5px;
+            }
+        }
+
+    }
+
+    .trackingDetails {
+        padding: 20px 30px;
+
+        & .proTracking {
+            width: 100%;
+
+            & .ftLine,
+            .ltLine {
+                width: 25%;
+            }
+
+            & .midLine {
+                color: #ccc;
+                font-size: 22px;
+                padding: 0 15px;
+                font-weight: bold;
+            }
+        }
+
+        & .proSelector {
+            display: flex;
+            justify-content: center;
+            padding: 10px 40px;
+            flex-wrap: wrap;
+
+
+            & .box {
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid #ccc;
+                margin: 3px;
+                font-size: 30px;
+                color: #ccc;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+
+    .downloadDetails {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 19px;
+        justify-content: center;
+        align-items: center;
+
+        & .fitnessDecription {
+            width: 100%;
+            padding: 0px 20px;
+        }
+    }
+
+
+    .SecondImage,
+    .SelectMainImg {
+        padding: 10px;
+        padding: 10px;
+
+        & .Image {
+            width: 100%;
+            height: auto;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+    }
+}
+
+
+
+
+@media only screen and (max-width:780px) {
+
+
+    & .trackingDetails {
+        padding: 5px 10px;
+
+        & .proTracking {
+            width: 100%;
+            padding: 10px 0px;
+
+            & .ftLine,
+            .ltLine {
+                width: 28%;
+            }
+
+            & .midLine {
+                color: #ccc;
+                font-size: 21px;
+                padding: 0 8px;
+                font-weight: 600;
+            }
+        }
+
+        & .proSelector {
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+            flex-wrap: wrap;
+
+
+            & .box {
+                height: 35px;
+                width: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid #ccc;
+                margin: 3px;
+                font-size: 23px;
+                color: #ccc;
+                font-weight: 600;
+            }
+        }
+    }
+
+
+}
+
+
+@media only screen and (max-width:580px) {
+
+    .trackingDetails {
+        padding: 3px;
+
+        & .proTracking {
+            width: 100%;
+            padding: 8px 0px;
+
+            & .ftLine,
+            .ltLine {
+                width: 19%;
+            }
+
+            & .midLine {
+                color: #ccc;
+                font-size: 21px;
+                padding: 0 8px;
+                font-weight: 600;
+            }
+        }
+
+        & .proSelector {
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+            flex-wrap: wrap;
+
+
+            & .box {
+                height: 35px;
+                width: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid #ccc;
+                margin: 3px;
+                font-size: 23px;
+                color: #ccc;
+                font-weight: 600;
+            }
+        }
+
+
+
+    }
+
+    .InnerFourthComponent {
+        & .downloadBookImage {
+            & .DwLink {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (max-width:350px) {
+
+    .fitnessSectionImg {
+        & .InnerImage {
+            width: 100%;
+            height: auto;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .trackingDetails {
+        padding: 0px;
+
+        & .proTracking {
+            width: 100%;
+
+            & .ftLine,
+            .ltLine {
+                width: 13%;
+            }
+
+            & .midLine {
+                color: #ccc;
+                font-size: 20px;
+                padding: 0 8px;
+                font-weight: 600;
+            }
+        }
+
+        & .proSelector {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0px;
+
+            & .box {
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid #ccc;
+                margin: 3px;
+                font-size: 19px;
+                color: #ccc;
+                font-weight: 400;
+            }
+        }
+    }
+
+}

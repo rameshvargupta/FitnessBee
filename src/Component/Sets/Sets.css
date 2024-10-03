@@ -1,0 +1,20 @@
+.sets {
+    display: flex;
+    margin-top: 5px;
+    height: 0px;
+    transition: .6s;
+    overflow: hidden;
+
+    & .set {
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        background-color: #c2c2c2;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}

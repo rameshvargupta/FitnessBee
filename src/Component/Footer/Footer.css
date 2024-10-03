@@ -1,0 +1,169 @@
+.Footer {
+    background-color: white;
+    margin-bottom: 10px;
+    padding:0px 10px;
+}
+
+.footerDetails {
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 490px;
+
+    & h2 {
+        font-size: 28px;
+    }
+}
+
+.footerInnerDetails {
+    background-color: #eeeeee;
+    text-align: center;
+    padding-bottom: 15px;
+    height: 470px;
+
+    & .Image {
+        width: 100%;
+        height: 320px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .hr {
+        padding: 0px 40px;
+
+        & hr {
+            color: #656363;
+        }
+    }
+
+    & meter {
+        width: 80%;
+        height: 60px;
+        color: red;
+    }
+
+}
+
+.SameBg {
+    background-color: #eeeeee;
+    margin: 10px 0px;
+}
+
+.footerprojectLink,
+.footerusefulLink {
+    margin-top: 5px;
+
+    & ul {
+        margin-top: -10px;
+    }
+}
+
+.footerLink {
+    padding: 0px 20px;
+
+    & h2 {
+        margin: 0;
+    }
+
+    & a {
+        text-decoration: none;
+        color: #333333;
+        padding-left: 5px;
+
+    }
+
+    & ul {
+        margin-left: -30px;
+        margin-top: -15px;
+    }
+
+    & li {
+        list-style: none;
+        margin: 0;
+        line-height: 40px;
+        border-bottom: 1px solid rgb(216, 216, 216);
+    }
+
+    & li:last-child {
+        border-bottom: none;
+    }
+
+    & li:hover {
+        background-color: rgb(243, 243, 243);
+    }
+}
+
+.footerprojectLink,
+.footerusefulLink {
+    padding: 0px 20px;
+
+    & h2 {
+        margin-bottom: 15px;
+    }
+
+    & a {
+        text-decoration: none;
+        color: #333333;
+    }
+
+
+    & ul {
+        margin-left: -30px;
+    }
+
+    & li {
+        margin-left: 18px;
+        line-height: 40px;
+    }
+
+    & a:hover {
+        color: red;
+
+    }
+}
+
+.lastFooter {
+    text-align: center;
+
+    & .contactLogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        & .Image {
+            border-right: 1px solid rgb(180, 180, 180);
+            padding: 0 16px;
+            cursor: pointer;
+
+            & img {
+                width: 40px;
+            }
+        }
+
+        & .lastchild {
+            border-right: none;
+        }
+    }
+
+    & .linkContact {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    & .ftPara,
+    .secPara {
+        margin: 20px 0;
+        font-size: 15px;
+        padding: 0px 10px;
+    }
+
+    & .thPara {
+        margin-top: 30px;
+        padding: 0px 10px;
+    }
+
+
+}

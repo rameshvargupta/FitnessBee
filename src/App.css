@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MainComponentPage {
+  background-color: #e5e5e5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation Bar css Start */
+
+.Navbar {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: #e5e5e5;
+
+
+}
+
+.MainLogo {
+  width: 15%;
   display: flex;
-  flex-direction: column;
+}
+
+.MenuDetails {
+  width: 85%;
+}
+
+.MenuBar {
+  display: flex;
+  font-size: 18px;
+  padding: 15px 0px;
+  position: relative;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+
+  & .logo {
+    font-size: 18px;
+
+    & img {
+      width: 140px;
+    }
+  }
+
+
+  & a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+  }
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.BigMenu {
+  display: flex;
+  justify-content: space-between;
+
+  & a {
+    padding: 10px 5px;
+    margin: 5px;
+    border: 2px solid #e5e5e5;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  & .highlight {
+    background-color: grey;
+    color: white;
+  }
+
+  & .highlight:hover {
+    background-color: red;
+    transition: .1s;
+  }
+
+
+  & .active {
+    border-radius: 8px;
+    border: 2px solid red;
+    border-top: none;
+  }
+
+  & .activeSupport {
+    background-color: red;
+    border: 2px solid red;
+    border-top: none;
+    color: white;
+  }
+
+  & a:hover {
+    padding: 8px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid red;
+    border-top: none;
+    transition: .6s;
+  }
+
+  & li {
+    list-style: none;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.smallcart {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+
+.MobileMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -22px;
+  background-color: rgb(243, 243, 243);
+  overflow: hidden;
+  transition: .7s;
+  border: 1px solid rgb(212, 211, 211);
+  padding: 25px 0px 0 20px;
+
+  & a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333333;
+    display: block;
+    transition: 0.5s;
   }
-  to {
-    transform: rotate(360deg);
+
+  & li {
+    list-style: none;
+    line-height: 45px;
+    border-top: 1px solid rgb(217, 215, 215);
+
   }
+
+
+
+  & li:hover {
+    background-color: #e5e5e5;
+    transition: .5s;
+  }
+
+
+  & button {
+    font-size: 35px;
+    border: none;
+    color: #00112c;
+    margin: -30px 0 0px 200px;
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+  }
+
+}
+
+/* Navigation Bar css End */
+
+@media screen and (max-width: 1200px) {
+  .BigMenu {
+    display: none;
+  }
+
+  .smallcart {
+    display: block;
+
+  }
+
+}
+
+@media screen and (min-width: 1201px) {
+
+  .smallcart {
+    display: none;
+  }
+
+  .MobileMenu {
+    display: none;
+  }
+
+  .NavStart {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }

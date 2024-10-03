@@ -1,0 +1,47 @@
+.TimerComponent {
+
+    & .Timer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5px;
+        height: 0px;
+        transition: .6s;
+        overflow: hidden;
+
+        & button {
+            border: 1px solid rgb(195, 195, 195);
+            margin: 5px;
+            padding: 6px 8px;
+            font-size: 18px;
+            height: 40px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        & button:disabled {
+            background-color: rgb(189, 185, 185);
+        }
+
+        & .showtime {
+            background-color: rgb(189, 185, 185);
+            color: white;
+            font-size: 25px;
+            padding: 0px;
+            width: 90px;
+            cursor: default;
+        }
+
+        & .pause,
+        .reset,
+        .start {
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+    }
+
+    & strong:hover {
+        cursor: pointer;
+    }
+}

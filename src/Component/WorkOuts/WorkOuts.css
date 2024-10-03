@@ -1,0 +1,10 @@
+.MainComponent{
+& .Image:hover{
+transform: scale(1.03);
+transition: .5s;
+}
+& .Image:not(:hover){
+    transform: scale(1.0);
+    transition: .5s; 
+}
+}

@@ -1,0 +1,395 @@
+.MainComponent {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.RespComponent {
+    margin: 0px 80px;
+}
+
+
+.topWDetails {
+    text-align: center;
+    padding-top: 20px;
+
+
+    & p {
+        margin: 0px;
+        font-size: 17px;
+        font-family: 'Oswald', sans-serif;
+
+    }
+
+    & span {
+        background-color: grey;
+        color: white;
+        padding: 2px 6px;
+    }
+}
+
+.WorkOutsImage {
+    padding: 5px 17px;
+
+    & .col-sm-6 {
+        padding: 5px;
+    }
+
+    & .Image {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    & figure {
+        padding: 5px 0px;
+        margin: 0;
+
+        & figcaption {
+            padding-top: 5px;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            font-size: 18px;
+        }
+    }
+}
+
+.numberOfPage {
+    display: flex;
+    justify-content: center;
+
+    & .page {
+        margin: 6px;
+        padding: 4px 10px;
+    }
+
+    & .page:hover {
+        background-color: grey;
+        cursor: pointer;
+        transition: .5s;
+        color: white;
+    }
+
+    & .activePage {
+        color: white;
+        background-color: rgb(182, 180, 180);
+    }
+
+}
+
+.SelectMainImg {
+    & .imagesDetails {
+        padding: 10px 100px;
+
+        & p {
+            font-size: 20px;
+            padding: 10px 5px 0 5px;
+        }
+
+        & a {
+            color: #CC0000;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        & li {
+            font-size: 19px;
+            margin-left: -5px;
+        }
+
+        & h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 32px;
+        }
+
+        & .linkDetails {
+            text-align: center;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width:750px) {
+    .footerInnerDetails {
+        background-color: #eeeeee;
+        text-align: center;
+        padding-bottom: 15px;
+
+        & .Image {
+            width: 100%;
+            height: 300px;
+
+            & img {
+                width: auto;
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (max-width:1100px) {
+    .RespComponent {
+        margin: 0px 50px;
+    }
+
+
+}
+
+@media only screen and (max-width:950px) {
+    .donatedetails {
+        padding: 0px 20px;
+
+        & .col-sm-6 {
+            padding-left: 5px;
+        }
+
+        & .Image {
+            width: 100%;
+            height: 180px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+
+
+    .SelectMainImg {
+        & .imagesDetails {
+            padding: 10px 30px;
+
+            & p {
+                font-size: 19px;
+                padding: 10px 5px 0 5px;
+            }
+
+            & a {
+                color: #CC0000;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+        & .FifthImgDetails {
+            display: flex;
+            margin: 20px 0;
+            flex-direction: column;
+
+            & p {
+                font-size: 19px;
+                padding: 10px 20px;
+            }
+
+            & .img {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+                & img {
+                    width: 200px;
+                }
+            }
+        }
+
+        & .programIndexDetails {
+            text-align: center;
+            padding: 20px;
+
+            & .IndexContainer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                & .innnerBox {
+                    padding-top: 10px;
+                }
+            }
+
+
+        }
+
+
+    }
+
+}
+
+@media only screen and (max-width:780px) {
+    .Footer {
+        & li {
+            line-height: 28px;
+        }
+    }
+
+    .RespComponent {
+        margin: 0px 20px;
+    }
+}
+
+
+@media only screen and (max-width:580px) {
+
+    .SelectMainImg {
+        & .imagesDetails {
+            padding: 5px;
+            margin-bottom: -40px;
+
+            & p {
+                font-size: 18px;
+                padding: 5px;
+            }
+
+            & a {
+                color: #CC0000;
+                font-size: 19px;
+                font-weight: bold;
+            }
+        }
+
+
+        & .programIndexDetails {
+            text-align: center;
+            padding: 0px;
+
+            & .IndexContainer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                & .innnerBox {
+                    padding-top: 10px;
+                }
+            }
+
+
+        }
+
+    }
+
+
+    .footerDetails {
+        padding: 10px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+
+    .Footer {
+        & li {
+            line-height: 30px;
+        }
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    .numberOfPage {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        & .page {
+            margin: 1px;
+            padding: 2px 6px;
+            font-size: 17px;
+        }
+
+
+    }
+
+    .RespComponent {
+        margin: 0px 5px;
+    }
+
+    .MainLogo {
+        margin-left: 15px;
+    }
+
+    .SelectMainImg {
+        & .FifthImgDetails {
+            display: flex;
+            margin: 0px;
+            flex-direction: column;
+
+            & p {
+                font-size: 19px;
+                padding: 10px;
+            }
+
+        }
+
+        & .programIndexDetails {
+            text-align: center;
+            padding: 0px;
+            margin: 0px -22px;
+
+            & .IndexContainer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            & .box {
+                height: 30px;
+                width: 120px;
+
+                & .innnerBox {
+                    padding-top: 2px;
+                }
+
+                & .true {
+                    & i {
+                        font-size: 18px;
+                        padding: 5px;
+                        margin: 0;
+                        background-color: #c2c2c2;
+                        display: none;
+                    }
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+
+}
+
+@media only screen and (max-width:350px) {
+    .MainLogo {
+        margin-left: 15px;
+    }
+
+    .RespComponent {
+        margin: 0px;
+    }
+
+    .SelectMainImg {
+        & .programIndexDetails {
+            padding: 0px;
+            margin: 0px -30px;
+
+            & .box {
+                height: 30px;
+                width: 100px;
+
+            }
+        }
+
+
+    }
+
+}

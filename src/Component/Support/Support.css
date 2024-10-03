@@ -1,0 +1,145 @@
+.supportPage {
+
+    & .paymentDetails {
+        text-align: center;
+
+        & .bankingDetails {
+            & div {
+                font-size: 19px;
+            }
+        }
+
+        & hr {
+            color: grey;
+        }
+    }
+
+    & h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    & p {
+        padding: 0 20px;
+        font-size: 19px;
+        line-height: 31px;
+        text-align: center;
+    }
+
+    & .SupportDetails {
+        padding: 15px 5px;
+
+    }
+
+    & .donateImage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & .InnerImage {
+            display: flex;
+            margin: 0px;
+
+            & .Image {
+                width: 100%;
+                height: 150px;
+                margin: 5px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                & img:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        & .CryptoImage {
+            display: flex;
+            margin: 0px;
+
+            & .Image {
+                width: 100%;
+                height: 250px;
+                margin: 5px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
+
+@media only screen and (min-width:1000px) {
+    .supportPage {
+        padding: 0 120px;
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+
+    .supportPage {
+        padding: 0 100px;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+
+    .supportPage {
+        padding: 0 10px;
+
+
+    }
+
+}
+
+@media only screen and (max-width:580px) {
+
+    .CryptoImage {
+        flex-direction: column;
+
+        & .Image {
+            height: 230px;
+        }
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    .supportPage {
+        padding: 0 5px;
+
+        & h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8rem;
+
+        }
+
+        & .donateImage {
+            margin-left: -8px;
+        }
+
+        & .InnerImage {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+    }
+
+}
